@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Health_assistant</string>
+    <string name="tv_title">运动助手</string>
+    <string name="tv_course">课程</string>
+    <string name="tv_remind">提醒</string>
+    <string name="tv_food">食物</string>
+</resources>

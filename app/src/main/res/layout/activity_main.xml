@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+       <include layout="@layout/nav_bar"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ly_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_course"
+            android:text="@string/tv_course"
+            android:textColor="@color/colorTab"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_remind"
+            android:text="@string/tv_remind"
+            android:textColor="@color/colorTab"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_food"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/tab_menu_bg"
+            android:drawableTop="@drawable/tab_food"
+            android:text="@string/tv_food"
+            android:textColor="@color/colorTab"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/ly_tab_bar"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ly_top_bar"
+        android:layout_above="@id/div_tab_bar"
+        android:id="@+id/ly_content">
+
+    </FrameLayout>
+
+</RelativeLayout>
