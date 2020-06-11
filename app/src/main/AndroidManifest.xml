@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activitys.MainActivity"></activity>
+        <activity android:name=".activitys.MainActivity" />
+        <activity android:name=".activitys.BaseActivity" />
+        <activity android:name=".activitys.CourseInfoActivity"></activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

@@ -5,4 +5,5 @@
     <dimen name="marginTopSize">150dp</dimen>
     <dimen name="marginBottomSize">50dp</dimen>
     <dimen name="navBarTitleSize">22dp</dimen>
+    <dimen name="course_name">25sp</dimen>
 </resources>

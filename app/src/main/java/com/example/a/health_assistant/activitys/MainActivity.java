@@ -3,6 +3,7 @@ package com.example.a.health_assistant.activitys;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -80,6 +81,9 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 if(fg_course == null){
                     fg_course = new FirstFragment();
                     fTransaction.add(R.id.ly_content,fg_course);
+//                    Intent intent = new Intent(this,BaseActivity.class);
+//                    startActivity(intent);
+
                 }else{
                     fTransaction.show(fg_course);
                 }
