@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/nav_bar_login"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/navBarTitleSize"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginSize"
+        android:paddingRight="@dimen/marginSize">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sj1" />
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="用户名"
+            android:textColor="@android:color/white"
+            android:paddingLeft="@dimen/marginSize"
+            android:paddingRight="@dimen/marginSize"
+            android:textSize="@dimen/titleSize"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_margin="@dimen/marginSize"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/marginSize"
+        android:paddingRight="@dimen/marginSize">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mima" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="密码"
+            android:textColor="@android:color/white"
+            android:paddingLeft="@dimen/marginSize"
+            android:paddingRight="@dimen/marginSize"
+            android:textSize="@dimen/titleSize"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_margin="@dimen/marginSize"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即注册"
+        android:layout_marginRight="@dimen/marginSize"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onRegisterClick"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/mainColor"
+        android:textColor="@android:color/white"
+        android:text="登  录"
+        android:onClick="onCommitClick"/>
+</LinearLayout>

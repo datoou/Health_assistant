@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.a.health_assistant.Fragment.FirstFragment;
@@ -40,7 +41,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
         fManager = getFragmentManager();
         bindViews();
-        tv_course.performClick();   //模拟一次点击，既进去后选择第一项
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        tv_course.performClick(); //模拟一次点击，既进去后选择第一项
     }
 
     //UI组件初始化与事件绑定
@@ -81,8 +88,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 if(fg_course == null){
                     fg_course = new FirstFragment();
                     fTransaction.add(R.id.ly_content,fg_course);
-//                    Intent intent = new Intent(this,BaseActivity.class);
-//                    startActivity(intent);
 
                 }else{
                     fTransaction.show(fg_course);

@@ -44,23 +44,6 @@ public class FirstFragment extends ListFragment {
                 new int[] { R.id.course_bg, R.id.course_name });
         //继承了ListFragment后的方法
         setListAdapter(adapter);
-//        AdapterView.OnItemClickListener itemClick  = new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                switch (parent.getId())
-//                {
-//                    case android.R.id.list://listView是xml中的id
-//                        expressitemClick(position);//position 代表你点的哪一个
-//                        break;
-//                }
-//            }
-//            public void expressitemClick(int postion){
-//                Intent intent = new Intent(getActivity(),CourseInfoActivity.class);//从fragment中跳转到Activity中
-//                startActivity(intent);
-//                //  finish();//看你需不需要返回当前界面，如果点返回需要返回到当前界面，就不用这个
-//            }
-//        };
-//        lv.setOnItemClickListener(itemClick);
 
     }
 

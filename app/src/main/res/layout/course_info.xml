@@ -2,9 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/nav_bar"/>
+    <include layout="@layout/nav_bar_course"/>
+    <!--<fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard-->
+        <!--android:id="@+id/player_list_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="220dp" />-->
+
     <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
-        android:id="@+id/player_list_video"
+        android:id="@+id/jiecao_Player"
         android:layout_width="match_parent"
-        android:layout_height="220dp" />
-</LinearLayout>
+        android:layout_height="500px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_course_info"
+        android:textSize="@dimen/tv_course_info"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_course_info2"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:textColor="#8a8a8a"/>
+    </LinearLayout>

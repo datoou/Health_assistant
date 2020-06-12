@@ -33,7 +33,7 @@ public class WelcomeActivity extends Activity {
         },3*1000);
     }
     private void toLogin(){
-        Intent intent = new Intent(this,MainActivity.class);
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
         finish();
     }

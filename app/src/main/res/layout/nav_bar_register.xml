@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/navBarTitleSize"
         android:textColor="@android:color/white"
-        android:text="@string/tv_title"
+        android:text="用户注册"
         android:layout_gravity="center"/>
 
 

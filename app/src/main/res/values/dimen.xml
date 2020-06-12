@@ -6,4 +6,15 @@
     <dimen name="marginBottomSize">50dp</dimen>
     <dimen name="navBarTitleSize">22dp</dimen>
     <dimen name="course_name">25sp</dimen>
+    <dimen name="tv_course_info">30sp</dimen>
+    <dimen name="titleSize">18sp</dimen>
+    <dimen name="infoSize">14sp</dimen>
+    <dimen name="albumMarginSize">4dp</dimen>
+    <dimen name="itemSize">14sp</dimen>
+    <dimen name="inputViewHeight">44dp</dimen>
+    <dimen name="itemPlaySize">36dp</dimen>
+    <dimen name="itemHeight">44dp</dimen>
+    <dimen name="itemIconSize">56dp</dimen>
+    <dimen name="discTopSize">90dp</dimen>
+    <dimen name="playMusicIconSize">210dp</dimen>
 </resources>
