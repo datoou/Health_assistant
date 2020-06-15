@@ -2,20 +2,19 @@ package com.example.a.health_assistant.activitys;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.a.health_assistant.R;
+import com.example.a.health_assistant.utils.UserDBHelper;
 
-public class MeActivity extends Activity implements View.OnClickListener{
-    private TextView mTvuser;
-    private ImageView iv_back;
+public class MeActivity extends Activity{
 
+    private TextView tv_user;
+    UserDBHelper userDBHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,29 +26,12 @@ public class MeActivity extends Activity implements View.OnClickListener{
 
         setContentView(R.layout.me_activity);
         initView();
+        initData();
     }
 
-    private void initView() {
-        iv_back = findViewById(R.id.iv_back);
-
-
-        iv_back.setOnClickListener(this);
+    private void initView(){
+        tv_user = findViewById(R.id.tv_user);
     }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-//            case R.id.iv_back:
-//                onBackPressed();
-//                break;
-//            case R.id.exit:
-//                Intent intent = new Intent(MeActivity.this,LoginActivity.class);
-//                startActivity(intent);
-//                break;
-//            case R.id.bmi_calculate:
-//                Intent intent1 = new Intent(this,BMICalculateActivity.class);
-//                startActivity(intent1);
+    private void initData(){
         }
-
-    }
 }
