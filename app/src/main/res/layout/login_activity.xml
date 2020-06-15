@@ -58,6 +58,7 @@
             android:layout_height="match_parent"
             android:background="@null"
             android:hint="密码"
+            android:inputType="textPassword"
             android:textColor="@android:color/black"
             android:paddingLeft="@dimen/marginSize"
             android:paddingRight="@dimen/marginSize"
