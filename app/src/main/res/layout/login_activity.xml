@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_marginTop="-17dp">
 
     <include layout="@layout/nav_bar_login"/>
     <ImageView
@@ -81,7 +82,8 @@
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="44dp"
-        android:background="@color/mainColor"
+        android:layout_marginTop="@dimen/marginSize"
+        android:background="@drawable/me_logout_bg"
         android:textColor="@android:color/white"
         android:text="登  录" />
 </LinearLayout>

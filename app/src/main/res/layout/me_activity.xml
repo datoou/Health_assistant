@@ -8,19 +8,20 @@
         android:id="@+id/tv_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="欢迎你，刘洋洋"
         android:gravity="center_horizontal"
         android:textSize="@dimen/titleSize"
         android:textStyle="bold"
-        android:layout_marginTop="@dimen/marginSize"/>
-    <TextView
+        android:layout_marginTop="@dimen/marginSize"
+        android:textColor="@color/mainColor"/>
+    <Button
         android:layout_width="match_parent"
         android:layout_height="@dimen/itemHeight"
         android:text="@string/tv_me_food"
         android:layout_marginTop="@dimen/marginSize"
         android:textSize="@dimen/titleSize"
+        android:textColor="@android:color/black"
         android:gravity="center"
-        android:background="@android:color/white"/>
+        android:background="@drawable/ripple_bg_food"/>
 
     <Button
         android:id="@+id/bmi_calculate"
@@ -31,23 +32,26 @@
         android:textSize="@dimen/titleSize"
         android:paddingLeft="@dimen/marginSize"
         android:gravity="center"
-        android:background="@android:color/white"/>
-    <TextView
+        android:background="@drawable/ripple_bg_bmi"/>
+    <Button
+        android:id="@+id/tv_modify_password"
         android:layout_width="match_parent"
         android:layout_height="@dimen/itemHeight"
         android:layout_marginTop="@dimen/marginSize"
         android:text="@string/tv_me_password"
+        android:textColor="@android:color/black"
         android:textSize="@dimen/titleSize"
         android:paddingLeft="@dimen/marginSize"
         android:gravity="center"
-        android:background="@android:color/white"/>
+        android:background="@drawable/ripple_bg_changepsd"/>
     <Button
         android:id="@+id/exit"
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_marginTop="@dimen/marginSize"
         android:textColor="@android:color/white"
-        android:background="@color/mainColor"
+        android:background="@drawable/me_logout_bg"
         android:text="@string/btn_me_exit"
+        android:textSize="18sp"
         android:gravity="center"/>
 </LinearLayout>

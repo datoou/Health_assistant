@@ -7,24 +7,61 @@
         <!--android:id="@+id/player_list_video"-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="220dp" />-->
-
     <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
-        android:id="@+id/jiecao_Player"
+        android:id="@+id/videoplayer"
         android:layout_width="match_parent"
-        android:layout_height="500px" />
+        android:layout_height="200dp" />
 
     <TextView
+        android:id="@+id/course_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tv_course_info"
+        android:text=""
         android:textSize="@dimen/tv_course_info"
+        android:textColor="@android:color/black"
         android:layout_marginLeft="@dimen/marginSize"
         android:layout_marginTop="@dimen/marginSize"/>
     <TextView
+        android:id="@+id/course_tag"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tv_course_info2"
+        android:text=""
+
         android:layout_marginLeft="@dimen/marginSize"
         android:layout_marginTop="@dimen/marginSize"
         android:textColor="#8a8a8a"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程介绍"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/course_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:layout_marginRight="@dimen/marginSize"
+        android:textColor="#515151"
+        android:text=""/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="适合人群"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/course_apply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSize"
+        android:layout_marginTop="@dimen/marginSize"
+        android:layout_marginRight="@dimen/marginSize"
+        android:textColor="#515151"
+        android:text=""/>
     </LinearLayout>

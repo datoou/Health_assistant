@@ -17,4 +17,10 @@
     <dimen name="itemIconSize">56dp</dimen>
     <dimen name="discTopSize">90dp</dimen>
     <dimen name="playMusicIconSize">210dp</dimen>
+    <dimen name="top_all_height">150dp</dimen>
+    <dimen name="top_all_margin">10dp</dimen>
+    <dimen name="top_mg_top">30dp</dimen>
+    <dimen name="top_et_width">100dp</dimen>
+    <dimen name="middle_tv_height">50dp</dimen>
+    <dimen name="buttom_wg">157dp</dimen>
 </resources>

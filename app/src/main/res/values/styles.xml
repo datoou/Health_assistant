@@ -1,10 +1,21 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-    </style>
 
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+
+    <style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+    </style>
     <style name="tab_style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -14,6 +25,74 @@
         <item name="android:padding">5dp</item>
         <item name="android:background">@drawable/tab_text_bg</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="real_top">
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:background">@color/all_bg</item>
+    </style>
+    <style name="tv_top_style">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_margin">15dp</item>
+    </style>
+    <style name="et_top_style1">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:hint">&#8195;&#8195; * </item>
+        <item name="android:textColorHint">@color/zdfp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@null</item>
+        <!-- <item name="android:maxLength">5</item>!-->
+        <item name="android:inputType">number|numberDecimal</item>
+    </style>
+
+    <style name="et_top_style2">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginLeft">200dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="imageButton">
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginLeft">270dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="tv_middle_style">
+        <item name="android:background">#ffffff</item>
+        <item name="android:layout_marginTop">180dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="tv_middle_style2">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#2EB6AA</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tv_middle_style3">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">70dp</item>
+    </style>
+
+    <style name="bottom_style">
+        <item name="android:layout_marginTop">350dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="bottom_text_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/bottom_bg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginRight">7dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
     </style>
 
 </resources>

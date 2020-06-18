@@ -5,27 +5,57 @@ package com.example.a.health_assistant.User;
  */
 
 public class Course {
-    private int courseImage;
-    private String courseName;
+    private String courseTitle;
+    private String courseTag;
+    private String courseInfo;
+    private String courseApply;
+    private String courseVideo;
 
-    public Course(int courseImage, String courseName) {
-        this.courseImage = courseImage;
-        this.courseName = courseName;
+    public Course(String courseTitle, String courseTag, String courseInfo, String courseApply, String courseVideo) {
+        this.courseTitle = courseTitle;
+        this.courseTag = courseTag;
+        this.courseInfo = courseInfo;
+        this.courseApply = courseApply;
+        this.courseVideo = courseVideo;
     }
 
-    public int getCourseImage() {
-        return courseImage;
+    public String getCourseTitle() {
+        return courseTitle;
     }
 
-    public void setCourseImage(int courseImage) {
-        this.courseImage = courseImage;
+    public void setCourseTitle(String courseTitle) {
+        this.courseTitle = courseTitle;
     }
 
-    public String getCourseName() {
-        return courseName;
+    public String getCourseTag() {
+        return courseTag;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
+    public void setCourseTag(String courseTag) {
+        this.courseTag = courseTag;
+    }
+
+    public String getCourseInfo() {
+        return courseInfo;
+    }
+
+    public void setCourseInfo(String courseInfo) {
+        this.courseInfo = courseInfo;
+    }
+
+    public String getCourseApply() {
+        return courseApply;
+    }
+
+    public void setCourseApply(String courseApply) {
+        this.courseApply = courseApply;
+    }
+
+    public String getCourseVideo() {
+        return courseVideo;
+    }
+
+    public void setCourseVideo(String courseVideo) {
+        this.courseVideo = courseVideo;
     }
 }

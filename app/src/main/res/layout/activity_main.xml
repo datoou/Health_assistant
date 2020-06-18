@@ -2,12 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.MainActivity">
+    tools:context=".activitys.MainActivity"
+    android:layout_marginTop="-20dp">
 
     <RelativeLayout
         android:id="@+id/ly_top_bar"
         android:layout_width="match_parent"
-        android:layout_height="48dp">
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp">
 
        <include layout="@layout/nav_bar"/>
         <View
@@ -15,8 +17,6 @@
             android:layout_height="2px"
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
-
-
 
     <LinearLayout
         android:id="@+id/ly_tab_bar"

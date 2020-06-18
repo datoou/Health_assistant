@@ -2,10 +2,9 @@ package com.example.a.health_assistant.activitys;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -20,16 +19,17 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private EditText et_password_login;
     private Button btn_login;
     private TextView btn_register;
+    private SharedPreferences sp;
     UserDBHelper userDBHelper;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.login_activity);
 
         initView();
@@ -62,6 +62,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
                     return;
                 }
                 if (userDBHelper.login(username, password)) {
+                    SharedPreferences sp = getSharedPreferences("username",MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putString("username",username);
+                    editor.commit();
                     Intent intent = new Intent(this, MainActivity.class);
                     startActivity(intent);
                     Toast.makeText(this, "登陆成功", Toast.LENGTH_SHORT).show();

@@ -14,4 +14,22 @@
     <string name="tv_me">我的</string>
     <string name="tv_course_info">徒手胸部训练初级</string>
     <string name="tv_course_info2">88千卡&#12288;K4强化 &#12288;11分钟</string>
+    <string name="top_tv_text1">身高:</string>
+    <string name="top_tv_text2">cm</string>
+    <string name="top_tv_text3">体重:</string>
+    <string name="top_tv_text4">kg</string>
+    <string name="middle_tv_text1">BMI:</string>
+    <string name="middle_tv_text2">理想体重:</string>
+    <string name="bottom_01a">&lt;18.5</string>
+    <string name="bottom_01b">极度偏瘦</string>
+    <string name="bottom_02a">18.5-23.9</string>
+    <string name="bottom_02b">正常</string>
+    <string name="bottom_03a">24-26.9</string>
+    <string name="bottom_03b">偏胖</string>
+    <string name="bottom_04a">27-29.9</string>
+    <string name="bottom_04b">肥胖</string>
+    <string name="bottom_05a">≥30</string>
+    <string name="bottom_05b">重度肥胖</string>
+    <drawable name="clr_normal">#2EB6AA</drawable>
+    <drawable name="clr_pressed">#12d3c2</drawable>
 </resources>

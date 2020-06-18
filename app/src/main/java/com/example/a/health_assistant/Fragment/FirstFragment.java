@@ -60,15 +60,9 @@ public class FirstFragment extends ListFragment {
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
-        if(position == 0){
-            Intent intent = new Intent(getActivity(),CourseInfoActivity.class);
-            startActivity(intent);
-            Toast.makeText(getActivity(),"你点击了 消息中心",Toast.LENGTH_LONG).show();
-        }else if(position == 1){
-            Toast.makeText(getActivity(),"你点击了  家教记录",Toast.LENGTH_LONG).show();
-        }else if(position == 2){
-            Toast.makeText(getActivity(),"你点击了  设置",Toast.LENGTH_LONG).show();
-        }
+        Intent intent = new Intent(getActivity(),CourseInfoActivity.class);
+        intent.putExtra("position",position);
+        startActivity(intent);
         super.onListItemClick(l, v, position, id);
     }
 
