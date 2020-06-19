@@ -14,4 +14,6 @@
     <color name="pp">#efb821</color>
     <color name="fp">#f27006</color>
     <color name="zdfp">#d81e06</color>
+    <color name="infoColor">#888888</color>
+    <color name="titleColor">#333333</color>
 </resources>

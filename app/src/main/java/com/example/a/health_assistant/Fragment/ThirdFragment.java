@@ -13,20 +13,21 @@ import android.widget.TextView;
 
 import com.example.a.health_assistant.R;
 import com.example.a.health_assistant.activitys.BMICalculateActivity;
+import com.example.a.health_assistant.activitys.FoodActivity;
 import com.example.a.health_assistant.activitys.LoginActivity;
 import com.example.a.health_assistant.activitys.ModifyPasswordActivity;
+import com.example.a.health_assistant.activitys.tabXml;
 
 public class ThirdFragment extends Fragment{
     private Button exit;
     private Button bmi_calculate;
     private TextView tv_user;
     private Button tv_modify_password;
+    private Button btn_food;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fg_me,container,false);
-//        TextView txt_content = (TextView) view.findViewById(R.id.txt_content);
-//        txt_content.setText(content);
         return view;
     }
 
@@ -37,6 +38,7 @@ public class ThirdFragment extends Fragment{
         exit = getActivity().findViewById(R.id.exit);
         tv_user = getActivity().findViewById(R.id.tv_user);
         tv_modify_password = getActivity().findViewById(R.id.tv_modify_password);
+        btn_food = getActivity().findViewById(R.id.btn_food);
 
         SharedPreferences sp = getActivity().getSharedPreferences("username",Context.MODE_PRIVATE);
         String username = sp.getString("username","");
@@ -63,6 +65,13 @@ public class ThirdFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), ModifyPasswordActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),tabXml.class);
                 startActivity(intent);
             }
         });

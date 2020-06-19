@@ -25,7 +25,7 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        mediaPlayer = MediaPlayer.create(this, R.raw.alarm);
+        mediaPlayer = MediaPlayer.create(this, R.raw.sleep);
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         Intent intent1 = new Intent(MyService.this,MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this,0,intent1,0);

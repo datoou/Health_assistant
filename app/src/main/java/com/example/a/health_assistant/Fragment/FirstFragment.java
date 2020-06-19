@@ -29,13 +29,11 @@ public class FirstFragment extends ListFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //图片
-        int[] images = {R.drawable.b_1,R.drawable.b_2,R.drawable.b_3,R.drawable.b_4,R.drawable.b_5,
-                R.drawable.b_1,R.drawable.b_6,R.drawable.b_7,R.drawable.b_8,R.drawable.b_1,
-                R.drawable.b_2,R.drawable.b_3,R.drawable.b_4,R.drawable.b_5,R.drawable.b_6};
+        int[] images = {R.drawable.b_1,R.drawable.b_2,R.drawable.b_3,R.drawable.b_4,R.drawable.b_6,
+                R.drawable.b_1,R.drawable.b_5,R.drawable.b_7,R.drawable.b_8,R.drawable.b_1};
         //内容
-        String[] names = {"徒手胸部训练初级","器械训练中级","HIIT适应上肢充能","徒手胸部训练中级","拳击训练初级",
-                "徒手胸部训练初级","器械训练中级","HIIT适应上肢充能","徒手胸部训练中级","拳击训练初级"
-        ,"徒手胸部训练初级","器械训练中级","HIIT适应上肢充能","徒手胸部训练中级","拳击训练初级"};
+        String[] names = {"徒手胸部训练初级","器械训练中级","HIIT适应上肢充能","徒手胸部训练中级","腹肌塑造强化",
+                "跃动燃脂强化","瑜伽晨间唤醒","有氧操初级","马甲线养成","瘦腿训练"};
         //参数一：上下文对象  参数二：数据源List<Map<String,Object>> 参数三：item对应的布局文件
         //参数四：表示由map中定义的key组成的字符串类型的数字  参数五：需要显示的控件id组成的的数组
         //保证参数四和参数五一一对应，否则控件属性会对换（张冠李戴）

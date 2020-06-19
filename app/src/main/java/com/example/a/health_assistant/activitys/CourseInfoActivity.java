@@ -12,6 +12,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 import com.example.a.health_assistant.R;
 import com.example.a.health_assistant.utils.CourseDBHelper;
 
@@ -34,7 +36,7 @@ public class CourseInfoActivity extends Activity implements View.OnClickListener
 
 //    String s1 = "http://gslb.miaopai.com/stream/ed5HCfnhovu3tyIQAiv60Q__.mp4";
 //    String s2 = "http://player.youku.com/player.php/sid/XMjUyODI2NDc2MA==/v.swf";//不支持swf格式的视频播放
-//    String imageUrl = "http://a4.att.hudong.com/05/71/01300000057455120185716259013.jpg";
+    String imageUrl = "https://i.loli.net/2020/06/18/y1lTHpnMCaLdxQ8.png";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,10 +80,10 @@ public class CourseInfoActivity extends Activity implements View.OnClickListener
         sensorEventListener = new JCVideoPlayer.JCAutoFullscreenListener();
         jcVideoPlayerStandard = (JCVideoPlayerStandard) findViewById(R.id.videoplayer);
         //添加视频缩略图
-//        ImageView thumbImageView = jcVideoPlayerStandard.thumbImageView;
-//        //使用Glide添加
-//        Glide.with(this).load(imageUrl).into(thumbImageView);
-        //配置jiecaovideoplayer
+        ImageView thumbImageView = jcVideoPlayerStandard.thumbImageView;
+        //使用Glide添加
+        Glide.with(this).load(imageUrl).into(thumbImageView);
+       // 配置jiecaovideoplayer
         cursor.moveToPosition(i);
         String course_video = cursor.getString(cursor.getColumnIndex(CourseDBHelper.COURSE_VIDEO));
         jcVideoPlayerStandard.setUp(course_video, jcVideoPlayerStandard.SCREEN_LAYOUT_NORMAL, "");
